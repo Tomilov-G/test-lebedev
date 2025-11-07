@@ -1,5 +1,61 @@
-# Vue 3 + Vite
+# Тестовое задание для студии Артемия Лебедева
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Позиция:** Стажер Frontend-разработчика
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+---
+
+## Выполнил:
+
+**Томилов Глеб**
+
+## Контакты
+
+- **Telegram:** [@glebtmv](https://t.me/glebtmv)
+- **Email:** [gleb.tomilov.2003@mail.ru](mailto:gleb.tomilov.2003@mail.ru)
+
+---
+
+## Описание проекта
+
+Проект представляет собой **компонент автоформы на Vue 3**, который строит форму на основе переданной **JSON-схемы**.
+
+Форма поддерживает следующие типы полей:
+
+- текстовое поле (`text`, `email`, `password`)
+- выпадающий список (`select`)
+- чекбокс (`checkbox`)
+
+Форма реализует **минимальную валидацию**: обязательные поля (`required`), минимальная длина (`minLength`) и регулярные выражения (`pattern`). Введённые пользователем данные реактивно отображаются в переданном объекте `v-model`.
+
+---
+
+## Пример JSON-схемы
+
+```json
+{
+  "fields": [
+    { "type": "text", "label": "Имя", "model": "name", "required": true },
+    { "type": "email", "label": "Email", "model": "email", "required": true },
+    {
+      "type": "password",
+      "label": "Пароль",
+      "model": "password",
+      "required": true,
+      "minLength": 6
+    },
+    {
+      "type": "select",
+      "label": "Роль",
+      "model": "role",
+      "options": ["Админ", "Пользователь"],
+      "required": true
+    },
+    {
+      "type": "checkbox",
+      "label": "Согласен с условиями",
+      "model": "terms",
+      "required": true
+    }
+  ]
+}
+```
