@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lottie-web": "^5.13.0",
     "normalize.css": "^8.0.1",
     "vue": "^3.5.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
+    "sass-embedded": "^1.93.3",
     "vite": "^7.1.7"
   }
 }
