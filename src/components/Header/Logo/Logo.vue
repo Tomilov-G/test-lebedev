@@ -12,17 +12,6 @@
     id="svg24"
     sodipodi:docname="a43aef20cd3beb72715eb9b1a6701fbf.svg"
   >
-    <defs id="defs28" />
-    <sodipodi:namedview
-      id="namedview26"
-      pagecolor="#ffffff"
-      bordercolor="#666666"
-      borderopacity="1.0"
-      inkscape:pageshadow="2"
-      inkscape:pageopacity="0.0"
-      inkscape:pagecheckerboard="0"
-      inkscape:document-units="pt"
-    />
     <g
       transform="matrix(0.1,0,0,-0.1,-32.9,119.8261)"
       fill="#000000"
