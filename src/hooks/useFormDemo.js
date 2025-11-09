@@ -45,7 +45,7 @@ export function useFormDemo() {
   onMounted(async () => {
     loading.value = true;
     try {
-      const res = await fetch("/form-schema.json");
+      const res = await fetch(`${import.meta.env.BASE_URL}form-schema.json`);
       if (!res.ok) throw new Error("Failed to load form schema");
 
       const data = await res.json();

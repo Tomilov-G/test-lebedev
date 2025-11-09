@@ -1,4 +1,4 @@
-import { ref, watch } from "vue";
+import { ref } from "vue";
 
 export function useForm(initialData = {}) {
   const formData = ref({ ...initialData });
@@ -24,7 +24,6 @@ export function useForm(initialData = {}) {
     formData.value[fieldName] = value;
   };
 
-  // Функция сброса формы
   const resetForm = () => {
     Object.keys(formData.value).forEach((key) => {
       if (typeof formData.value[key] === "boolean") {

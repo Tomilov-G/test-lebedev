@@ -3,13 +3,12 @@
   font-family: "ALSArtemiusSans";
   font-style: normal;
   font-weight: 400;
-  src: url("@/assets/fonts/ALSArtemiusSans-Regular.woff2") format("woff2");
+  src: url("/test-lebedev/fonts/ALSArtemiusSans-Regular.woff2") format("woff2");
 }
-
 /* Bold */
 @font-face {
   font-family: "ALSArtemiusSans";
   font-style: normal;
   font-weight: 900;
-  src: url("@/assets/fonts/ALSArtemiusSans-Bold.woff2") format("woff2");
+  src: url("/test-lebedev/fonts/ALSArtemiusSans-Bold.woff2") format("woff2");
 }
